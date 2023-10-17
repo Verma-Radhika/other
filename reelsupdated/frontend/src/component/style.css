@@ -1,0 +1,13 @@
+ video {
+   width: 100%;
+   max-width: -webkit-fill-available;
+   max-width: fill-available;
+}
+.news-feed-area .news-feed-form form .form-group textarea.form-control {
+    min-height: 80px;
+}
+
+.styleSpace {
+   display: flex;
+  justify-content: space-between !important;
+}

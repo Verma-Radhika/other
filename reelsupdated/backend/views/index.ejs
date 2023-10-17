@@ -1,0 +1,21 @@
+img<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="" alt="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script>
+        const socket = io.connect("/");
+        // const 
+        // capture the image that is send from the server side
+        socket.on('image',(image)=>{
+            const img = document.getElementById('image');
+            img.src = `data:image/jpge;base64, ${image}`; // encoding tha image base64
+        })
+    </script>
+</body>
+</html>
